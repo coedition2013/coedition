@@ -1,0 +1,480 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */ 
+ 
+
+
+ 
+ 
+/* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 
+}
+
+body {
+    /*
+	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold 
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit 
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' 
+    background-color:#F0F0F0;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%; 
+}
+
+/* Portrait layout (default) 
+.app 
+	background: url(../img/logo.png) no-repeat center top; /* 170px x 200px 
+	position: absolute;             /* position in the center of the screen 
+	left: 859px;
+	top: 490px;
+	height: 50px;                   /* text area height 
+	width: 225px;                   /* text area width 
+	text-align: center;
+	padding: 180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) 
+	margin: 115px 0px 0px 112px;  /* offset vertical: half of image height and text area height 
+}/* offset horizontal: half of text area width */
+
+
+/* Landscape layout (with min-width) */
+/*
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height 
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width 
+    }
+}
+*/
+/*_________________________________________________________________________________________________________________________*/
+
+@import url('../fonts/lato/stylesheet.css');
+
+
+body {
+}
+/*selecteurs*/
+.arc{
+	
+	}
+	
+.infos{
+
+    }
+	
+.articles{
+	
+	}
+	
+.illustrations{
+	
+    }
+
+/* TITRE HHHHHHHHHHHHHHH*/
+h0 {font-family:'LatoBlack';
+	font-size:40px;
+	color:#CCC;
+	text-transform:capitalize;
+}
+
+h1 {
+	font-family:'LatoBlack';
+    font-size:36px;
+	color:#FFF;
+    text-align:left;
+	text-transform:uppercase;
+}
+
+h1_1 {
+	font-family:'LatoBlack';
+    font-size:11px;
+	color:#FFF;
+    text-align:left;
+	text-transform:uppercase;
+}
+
+h1_2 {
+	font-family:'LatoBlack';
+    font-size:17px;
+	color:#FFF;
+    text-align:left;
+	text-transform:uppercase;
+}
+
+h2{
+	 font-family: 'LatoBold';
+	 font-size:24px;
+	 color:#FFF;
+	 text-align:left;
+	 text-transform: uppercase;
+	 
+}
+
+/* FOND FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF  */
+#s1a1 {									/*semaine 1 (12 octobre 2012) a 1 = DIY*/
+	font-family:'LatoBlack';
+	font-size: 190px;
+	text-transform:uppercase;
+	color:#FFF;
+	background-color:#EBEBEB;
+	height:1536px;
+	width:2048px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	
+	
+}
+
+#s1a2 {									/*semaine 1 (12 octobre 2012) a 2 = Marcher*/
+	font-family:'LatoBlack';
+	font-size: 210px;
+	text-transform:uppercase;
+	color:#FFF;
+	background-color:#EBEBEB;
+	height:1536px;
+	width:2048px;
+	position:absolute;
+	left:0px;
+	top:1536px;
+	
+}
+
+#s1a3 {									/*semaine 1 (12 octobre 2012) a 3 = ADC*/
+	font-family:'LatoBlack';
+	font-size: 210px;
+	text-transform:uppercase;
+	color:#FFF;
+	background-color:#EBEBEB;
+	height:1536px;
+	width:2048px;
+	position:absolute;
+	left:0px;
+	top:3072px;
+	
+}
+
+#s2a1 {                                  /*semaine 2 (19 octobre 2012) a 1 = DIY*/
+	font-family:'LatoBlack';
+	font-size: 200px;
+	text-transform:uppercase;
+	color:#FFF;
+	background-color:#EBEBEB;
+	height:1536px;
+	width:2048px;
+	position:absolute;
+	left:2048px;
+	top:0px;
+	
+}
+
+#s2a2 {                                  /*semaine 2 (19 octobre 2012) a 2 = Marcher*/
+	font-family:'LatoBlack';
+	font-size: 200px;
+	text-transform:uppercase;
+	color:#FFF;
+	background-color:#EBEBEB;
+	height:1536px;
+	width:2048px;
+	position:absolute;
+	left:2048px;
+	top:1536px;
+	
+}
+
+#s2a3 {                                  /*semaine 2 (19 octobre 2012) a 3 = ADC*/
+	font-family:'LatoBlack';
+	font-size: 200px;
+	text-transform:uppercase;
+	color:#FFF;
+	background-color:#EBEBEB;
+	height:1536px;
+	width:2048px;
+	position:absolute;
+	left:2048px;
+	top:3072px;
+	
+}
+
+
+#s3a1 {                                  /*semaine 3 (26 octobre 2012) a 1 = DIY*/
+	font-family:'LatoBlack';
+	font-size: 200px;
+	text-transform:uppercase;
+	color:#FFF;
+	background-color:#EBEBEB;
+	height:1536px;
+	width:2048px;
+	position:absolute;
+	left:4096px;
+	top:0px;
+	
+}
+
+#s3a2 {                                  /*semaine 3 (26 octobre 2012) a 2 = Marcher*/
+	font-family:'LatoBlack';
+	font-size: 200px;
+	text-transform:uppercase;
+	color:#FFF;
+	background-color:#EBEBEB;
+	height:1536px;
+	width:2048px;
+	position:absolute;
+	left:4096px;
+	top:1536px;
+	
+}
+
+#s3a3 {                                  /*semaine 3 (26 octobre 2012) a 3 = ADC*/
+	font-family:'LatoBlack';
+	font-size: 200px;
+	text-transform:uppercase;
+	color:#FFF;
+	background-color:#EBEBEB;
+	height:1536px;
+	width:2048px;
+	position:absolute;
+	left:4096px;
+	top:3072px;
+	
+}
+
+/*   CONTENAIRE ARTICLE AAAAAAAAAAAAAAAA  */
+
+#a1 {                                 /*ARC DIY  12/10/2012*/
+	background-color:#09F;
+	position:absolute;
+	left: 100px ;
+	top: 100px ;
+	width: 350px ;
+	text-align:justify;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+#a2 {                                 /*ARC MARCHER   12/10/2012*/
+	background-color:#0C0;
+	position:absolute;
+	left: 700px ;
+	top: 1700px ;
+	width: 500px;
+	text-align:justify;
+	padding:10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	z-index:2;
+}
+
+#a3 {                                /*ARC DIY  19/10/2012*/
+	background-color:#09F;
+	position:absolute;
+	left: 2200px ;
+	top: 150px ;
+	width: 500px ;
+	text-align:justify;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	z-index:2;
+}
+
+#a4 {                               /*ARC ADC  26/10/2012*/
+	background-color:#F93;
+	position:absolute;
+	left:4820px;
+	top:3500px;
+	width:960px;
+	text-align:justify;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	z-index:2;
+}
+
+#a5 {                               /*ARC DIY  26/10/2012*/
+	background-color:#09F;
+	position:absolute;
+	left:4600px;
+	top:500px;
+	width:300px;
+	text-align:justify;
+	padding: 2px 2px 2px 2px;
+	margin: 10px 10px 10px 10px;
+	z-index:2;
+}
+
+#a6 {                                 /*ARC MARCHER   26/10/2012*/
+	background-color:#0C0;
+	position:absolute;
+	left: 4600px ;
+	top: 1950px ;
+	width: 400px;
+	text-align:justify;
+	padding:4px 4px 4px 4px;
+	margin: 10px 10px 10px 10px;
+	z-index:2;
+}
+
+/* PARAGRAPHES PPPPPPPPPPPPPPP*/
+
+
+.p1{
+	font-family:'LatoHairline';
+	font-size:14px;
+	color:#EBEBEB;
+	text-align:justify;
+	margin:10px 10px 10px 10px;
+	word-wrap: break-word;
+}
+
+.p1_1{
+	font-family:'LatoHairline';
+	font-size:7px;
+	color:#EBEBEB;
+	text-align:justify;
+	margin:2px 2px 2px 2px;
+	word-wrap: break-word;
+}
+
+.p1_2{
+	font-family:'LatoHairline';
+	font-size:10px;
+	color:#EBEBEB;
+	text-align:justify;
+	margin:2px 2px 2px 2px;
+	word-wrap: break-word;
+}
+
+
+/* IMAGES IIIIIIIIIIIIIIIIIIII*/
+
+#i2{	                         /* taille de l'image = 600x400px relatif a "#a2" */
+	position:absolute;
+	left: 700px ;
+	top: 1750px ;
+	z-index:1;
+}
+
+#i3{                             /*taille de l'image = 541x700px relatif a "#a3" */
+	position:absolute;
+	left:2200px ;
+	top: 150px;
+	z-index:1;
+}
+
+#i4_1{                             /*taille de l'image = 640x400px relatif a "#a4" */
+	position:absolute;
+	left:4800px;
+	top:3480px;
+	z-index:1;
+}
+
+#i4_2{                             /*taille de l'image = 552x400px relatif a "#a4" */
+	position:absolute;
+	left:4800px;
+	top:3880px;
+	z-index:1;
+}
+
+#i4_3{                             /*taille de l'image = 335x400px relatif a "#a4" */
+	position:absolute;
+	left:5352px;
+	top:3880px;
+	z-index:1;
+}
+
+#i4_4{                             /*taille de l'image = 322x400px relatif a "#a4" */
+	position:absolute;
+	left:5440px;
+	top:3480px;
+	z-index:1;
+}
+
+
+/* LÉGENDES LEG LEG LEG LEG LEG LEG */
+
+.leg{
+	font-family:'LatoHairline';
+	font-size:6px;
+	text-align:left;
+	color:#1A1A1A;
+}
+
+/*menu*/
+
+#plan{
+	position:fixed;
+	top:20px;
+	left:20px;
+	z-index:3;	
+}
+
+/*_________________________________________________________________________________________________________________________*/
+
+/*deja là ( j'ai laissé en commentaire le css pour ne pas perturbé la vision du site 
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+
+*/
