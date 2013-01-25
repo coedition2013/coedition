@@ -14,7 +14,9 @@
 	<true/>
 	<key>SnapshotAutomaticallyBeforeSignificantChanges</key>
 	<true/>
+	<key>SnapshotCustomLocation</key>
+	<string>/Users/vincentbesserer/Documents/Corova203/coedition</string>
 	<key>SnapshotLocationStyle</key>
-	<string>Default</string>
+	<string>Custom</string>
 </dict>
 </plist>

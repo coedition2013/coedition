@@ -262,18 +262,8 @@ Chacune de ses séries photographiques est consacrée à un territoire spécifiq
 		$(document).ready(function (){
 			// c'est a l(interieur de ces accollades que je met le code a executer
 		
-		$('#bouton').click(function(){
-		temp = $('#cible').css("opacity");
-		if( temp >0){
-			temp-= .05;
-		}
-		
-		$('#cible	').css("opacity", temp);
-		}
 		
 		
-		
-		);// fin click
 	
 		
 		});// fin .ready
@@ -311,10 +301,10 @@ Chacune de ses séries photographiques est consacrée à un territoire spécifiq
 			event.preventDefault();
 		   $('.articles').fadeIn("slow");
 	   }
-	   ///////////FadeOut//////////
+	   ///////////FdeOut//////////
 	   function fonduO(){
 		   event.preventDefault();
-		   $('.articles').fadeOut("slow");
+		   $(this).fadeOut("slow");
 		   
 	   }
 	   
@@ -391,6 +381,7 @@ Chacune de ses séries photographiques est consacrée à un territoire spécifiq
 		   }
 	  
 	///////////////////////////////////////////////////////////////  
+	  
 	  
 	  </script>
       
