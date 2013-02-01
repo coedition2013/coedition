@@ -20,8 +20,8 @@
 //  main.m
 //  coedition
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
+//  Created by ___VINCENT BESSERER___ on ___2013___.
+//  Copyright ___ENSA NANCY___ ___2013___. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
