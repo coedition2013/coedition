@@ -1,9 +1,15 @@
 @import url('../fonts/lato/stylesheet.css');
 @import url('../fonts/textmeone/stylesheet.css');
-
+*{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	}
 
 body{
 	}
+
 
 /*----------------fond, cadrillage des semaines et arcs--------------------------*/
 .cadrillage{
