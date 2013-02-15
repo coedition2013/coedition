@@ -11,8 +11,8 @@ body{
 	}
 
 
-/*----------------fond, cadrillage des semaines et arcs--------------------------*/
-.cadrillage{
+/*----------------fond, quadrillage des semaines et arcs--------------------------*/
+.quadrillage{
 }
 
 #S1A1{
@@ -70,7 +70,7 @@ body{
 	}
 
 /*--------------------------------titrages----------------------------------------*/
-h1{
+h1{/*titre du quadrillage*/
 	position:relative;
 	top:-20px;
 	left:10px;
@@ -81,16 +81,36 @@ h1{
 	color:#6F9;
 	}
 
-h2{
+h2{/*titre article*/
 	position:relative;
 	top:0px;
 	left:0px;
 	font-family:'TextMeOne';
 	font-weight:900;
-	font-size:46px;
+	font-size:48px;
 	color:#000;
 	}
-	
+
+h3{/*chapeaux article*/
+	position:relative;
+	top:0px;
+	left:0px;
+	font-family:'TextMeOne';
+	font-weight:900;
+	font-size:48px;
+	color:#000;
+	}
+
+h4{/*exergue*/
+	position:relative;
+	top:0px;
+	left:0px;
+	font-family:'TextMeOne';
+	font-weight:900;
+	font-size:48px;
+	color:#000;
+	}
+
 /*---------------------------------- paragraphes -------------------------------------*/	
 
 p{
@@ -106,141 +126,106 @@ p:first-letter{
 	margin-top:-0.1em;
 	}
 	
-/*----------------------------- contener article, image, cartouche dans une semaine C1S1A1 = Contener 1 Semaine 1 Arc 1 -------------*/
-.contener{
+/*----------------------------- conteneur article, image, cartouche dans une semaine C1S1A1 = article(article) 1 Semaine 1 Arc 1 -------------*/
+.article{
 	}
 
-#C1S1A1{
-	width:600px;
-	height:600px;
+#C1-S1-A1{
+	width:30%;
+	height:60%;
 	position:relative;
 	top:10px;
 	left:50px;
-/*	background-color:#36F;   */
+	background-color:#36F;   
 	}
 
-#C2S1A1{
-	width:400px;
-	height:600px;
+#C2-S1-A1{
+	width:20%;
+	height:60%;
 	position:relative;
 	top:-700px;
-	left:750px;   
+	left:750px;
+	background-color:#FC3;   
+   
 	}
 
-#C3S1A1{
+#C3-S1-A1{
+	width:10%;
+	position:relative;
+	top:-1500px;
+	left:1750px;
+	background-color:#CFC; 
+	}
+
+#C4-S1-A1{
 	
 	}
 
-#C4S1A1{
-	
-	}
 
-/*-------------------------sous contener pour le cartouch carC1S1A1 ------------------------------------*/
-.cartouch{
-	height:40px;
-/*	background-color:#00F;  */
-	transform:rotate(-90deg);	
-	-webkit-transform:rotate(-90deg);	
-}
 
-#carC1S1A1{
-	position:relative;
-	top:245px;
-	left:-280px;
-}
-
-#carC2S1A1{
-	position:relative;
-	top:140px;
-	left:-179px;
-}
-
-/*------------------------- text à l'interieur du cartouch -----------------------------------*/
-.textcartouch{
-	font-family:'TextMeOne';
-	font-size:6px;
-	text-align:right;
-	position:relative;
-	top:-38px;
-	right:25px;
-	
-}
-
-.chevroncartouch{
-	font-family:'LatoRegular';
-	font-size:36px;
-	text-align:right;
-	position:relative;
-	right:0px;
-	top:-12px;
-	color:#6F9;
-}
-
-/*----------------------- images, illustration,... tous ce qui a une transparence I1C1S1A1 (Image 1 Contener 1 Semaine 1 Arc 1) -------------------*/
+/*----------------------- images, illustration,... tous ce qui a une transparence I1C1S1A1 (Image 1 article 1 Semaine 1 Arc 1) -------------------*/
 .illustrations{
 	opacity:0.3;
 	z-index:1;
 }
 
-#I1C1S1A1{					/*taille de l'image = 300 x225 px*/
+#I1-C1-S1-A1{					/*taille de l'image = 300 x225 px*/
 	position:relative;
-	top:-70px;
-	left:30px;
-	}
-#I1C1S1A1 img{
-	width:300px;
+	top:30px;
+	left:120px;
 	}
 	
-#I2C1S1A1{					/*taille de l'image = 100 x 75 px*/
+#I2-C1-S1-A1{					/*taille de l'image = 100 x 75 px*/
 	position:relative;
 	top:100px;
 	left:55px;
 	}
 
-#I3C1S1A1{					/*taille de l'image = 100 x 75 px*/
+#I3-C1-S1-A1{					/*taille de l'image = 100 x 75 px*/
 	position:relative;
 	top:-70px;
 	left:55px;
 	}	
 
-/*-------------------text des articles A1C1S1A1  (Article 1 Contener 1 Semaine 1 Arc 1) -----------------------*/
-.articles{
+/*-------------------text des text A1C1S1A1  (Article 1 article(text) 1 Semaine 1 Arc 1) -----------------------*/
+.text{
 	
 	opacity:1.0;
 	z-index:2;
 }
 
-#A1C1S1A1{
+#T1-C1-S1-A1{
 	font-family:'LatoRegular';
-	font-size:14px;
+	font-size:2em;
 	color:#000;
 	text-align:left;
 	position:relative;
-	top:-270px;
-	left:33px;
-	width:294px;
+	top:-260px;
+	left:120px;
+	width:60%;
+	/*background-color:#3FF;*/
 }
 	
-#A2C1S1A1{
+#T2-C1-S1-A1{
 	font-family:'LatoRegular';
-	font-size:7px;
+	font-size:.7em;
 	color:#000;
 	text-align:left;
 	position:relative;
 	top:-235px;
 	left:50px;
-	width:120px;
+	width:80%;
 }
 
-#A3C1S1A1{
+#T3-C1-S1-A1{
 	font-family:'LatoRegular';
-	font-size:0.00002em;
+	font-size: 1em;
 	color:#000;
 	text-align:left;
 	position:relative;
-	top:-440px;
-	left:190px;
-	width:40px;
+	top:0px;
+	left:0px;
+	width:20%;
 }
 
 

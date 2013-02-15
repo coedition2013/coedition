@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@largeur:2048px;
+@hauteur:1536px;
+
+@couleurADC:#F30; /*A1*/
+@couleurDIY:#6F9; /*A2*/
+@couleurMARCHER:#63F; /*A3*/
+
+
+/*----------------fond, quadrillage des semaines et arcs--------------------------*/
+.quadrillage{ 
+    }
+
+.tailleMatrice{
+  width:2048px;
+  height:1536px;
+  position:absolute;
+  }
+    
+#S1A1{
+  .tailleMatrice;
+  top:(@hauteur*0);
+  left:(@largeur*0);
+  background-color:(@couleurADC); 
+  }
+
+#S1A2{
+ .tailleMatrice;
+  top:(@hauteur);
+  left:(@largeur*0);
+  background-color:(@couleurDIY);
+  }
+
+#S1A3{
+  .tailleMatrice;
+  top:(@hauteur*2);
+  left:(@largeur*0);
+  background-color:(@couleurMARCHER);
+  }
+
+#S2A1{
+ .tailleMatrice;
+  top:(@hauteur*0);
+  left:(@largeur);
+  background-color:(@couleurADC);
+  }
+
+#S2A2{  
+  .tailleMatrice;
+  top:(@hauteur);
+  left:(@largeur);
+  background-color:(@couleurDIY);
+  }
+
+#S2A3{
+  .tailleMatrice;
+  top:(@hauteur*2);
+  left:(@largeur);
+  background-color:(@couleurMARCHER);
+  }
+  
+#S3A1{
+ .tailleMatrice;
+  top:(@hauteur*0);
+  left:(@largeur*2);
+  background-color:(@couleurADC);
+  }
+
+#S3A2{  
+  .tailleMatrice;
+  top:(@hauteur);
+  left:(@largeur*2);
+  background-color:(@couleurDIY);
+  }
+
+#S3A3{
+  .tailleMatrice;
+  top:(@hauteur*2);
+  left:(@largeur*2);
+  background-color:(@couleurMARCHER);
+  }
+
+/*--------FIN--------fond, quadrillage des semaines et arcs-------------FIN-------------*/
+
+/*----------------------------- conteneur article, image, cartouche dans une semaine C1S1A1 = article(article) 1 Semaine 1 Arc 1 -------------*/
+.article{
+  position:relative;
+  
+}
+
+#C1-S1-A1{
+  .article;
+  width:(@largeur*0.2);
+  height:(@hauteur*0.6);
+  font-size:6px;
+  top:0px;
+  left:50px;
+  background-color:#FC3;      
+  }
+
+#C2-S1-A1{
+  .article;
+  width:(@largeur*0.2);
+  height:(@hauteur*0.6);
+  top:-1000px;
+  left:750px;
+  background-color:#FC3;      
+  }
+
+#C3-S1-A1{
+  .article;
+  width:10%;
+  top:-1500px;
+  left:1750px;
+  background-color:#CFC; 
+  }
+
+
+  
+ 
