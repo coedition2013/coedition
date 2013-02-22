@@ -32,6 +32,7 @@ h1 {
 h2 {
   /*titre article*/
 
+  margin: .3em 0;
   font-family: 'roboto_condensedbold';
   font-size: 2em;
   color: #000;
@@ -70,6 +71,24 @@ h4 {
   left: 0px
   width:60%;
 }
+.C2 {
+  column-count: 2;
+  column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+}
+.C3 {
+  column-count: 3;
+  column-gap: 0.05em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0.05em;
+}
+.C4 {
+  column-count: 4;
+  column-gap: 0.05em;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 0.05em;
+}
 /*
 #T1-C1-S1-A1{
   font-size:3.5em;
@@ -92,16 +111,13 @@ h4 {
   width:100%;
 }*/
 /*-----FIN------text des text A1C1S1A1  (Article 1 article(text) 1 Semaine 1 Arc 1) -----FIN-------*/
-/*------------------------------------------------------- paragraphes ----------------------------------------------------------------*/p {
-  margin: 5px;
-}
-/*---------------FIN------------------- paragraphes ---------------FIN----------------------*//*-------------------------------------------------fond, quadrillage des semaines et arcs----------------------------------------------*/
+/*------------------------------------------------------- paragraphes ----------------------------------------------------------------*//*---------------FIN------------------- paragraphes ---------------FIN----------------------*//*-------------------------------------------------fond, quadrillage des semaines et arcs----------------------------------------------*/
 .tailleMatrice {
   width: 2048px;
   height: 1536px;
   position: absolute;
 }
-#S1A1 {
+#S1-A1 {
   width: 2048px;
   height: 1536px;
   position: absolute;
@@ -181,7 +197,6 @@ h4 {
 }
 #C1-S1-A1 {
   width: 614.4px;
-  height: ;
   top: 0px;
   left: 50px;
   background-color: #6F9;
@@ -213,9 +228,9 @@ h4 {
   opacity: 0.3;
   z-index: 1;
   position: relative;
-  top: 0px;
-  left: 20px;
-  width: 50%;
+  top: -300px;
+  left: -20px;
+  width: 614.4px;
 }
 #I2-C1-S1-A1 {
   /*taille de l'image = 100 x 75 px*/
