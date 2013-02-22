@@ -2,15 +2,90 @@
 /* CSS Document */
 
 
+/*----------------------------------------------------*/
+@import url('../fonts/lato/stylesheet.css');
+@import url('../fonts/textmeone/stylesheet.css');
+*{
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  user-select:none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  }
+/*----------------------------------------------------*/
+
+
+/*--------------------------------------------------constantes-----------------------------------------------------------------*/
 @largeur:2048px;
 @hauteur:1536px;
 
 @couleurADC:#F30; /*A1*/
 @couleurDIY:#6F9; /*A2*/
 @couleurMARCHER:#63F; /*A3*/
+/*------------------constantes----------------------*/
 
 
-/*----------------fond, quadrillage des semaines et arcs--------------------------*/
+/*---------------------------------------------------titrages-----------------------------------------------------------------*/
+h1{/*titre du quadrillage*/
+  position:relative;
+  top:-20px;
+  left:10px;
+  font-family:'TextMeOne';
+  font-weight:900;
+  font-size:70px;
+  text-transform:uppercase;
+  color:#6F9;
+  }
+
+h2{/*titre article*/
+  position:relative;
+  top:0px;
+  left:0px;
+  font-family:'TextMeOne';
+  font-weight:900;
+  font-size:55px;
+  color:#000;
+  }
+
+h3{/*chapeaux article*/
+  position:relative;
+  top:0px;
+  left:0px;
+  font-family:'TextMeOne';
+  font-weight:900;
+  font-size:48px;
+  color:#000;
+  }
+
+h4{/*exergue*/
+  position:relative;
+  top:0px;
+  left:0px;
+  font-family:'TextMeOne';
+  font-weight:900;
+  font-size:48px;
+  color:#000;
+  }
+/*---------------FIN-----------------titrages--------------------FIN--------------------*/
+
+
+/*------------------------------------------------------- paragraphes ----------------------------------------------------------------*/  
+.paragraphe{}
+p{
+  margin:5px;
+  
+  } 
+
+p:first-letter{
+  font-size:6.3em;
+  float:left;
+  color:#6F9;
+  padding:0 .01em -1em 0;
+  margin-top:-0.1em;
+  }
+/*---------------FIN------------------- paragraphes ---------------FIN----------------------*/  
+
+
+/*-------------------------------------------------fond, quadrillage des semaines et arcs----------------------------------------------*/
 .quadrillage{ 
     }
 
@@ -82,8 +157,8 @@
   left:(@largeur*2);
   background-color:(@couleurMARCHER);
   }
-
 /*--------FIN--------fond, quadrillage des semaines et arcs-------------FIN-------------*/
+
 
 /*----------------------------- conteneur article, image, cartouche dans une semaine C1S1A1 = article(article) 1 Semaine 1 Arc 1 -------------*/
 .article{
@@ -93,31 +168,95 @@
 
 #C1-S1-A1{
   .article;
-  width:(@largeur*0.2);
+  width:(@largeur*0.5);
   height:(@hauteur*0.6);
-  font-size:6px;
   top:0px;
   left:50px;
-  background-color:#FC3;      
+ /* background-color:#FC3; */     
   }
 
 #C2-S1-A1{
   .article;
   width:(@largeur*0.2);
   height:(@hauteur*0.6);
-  top:-1000px;
-  left:750px;
+  top:-960px;
+  left:1150px;
   background-color:#FC3;      
   }
 
 #C3-S1-A1{
   .article;
-  width:10%;
+  width:(@largeur*0.2);
+  height:;
   top:-1500px;
   left:1750px;
   background-color:#CFC; 
   }
+/*----FIN----conteneur article, image, cartouche dans une semaine C1S1A1 = article(article) 1 Semaine 1 Arc 1---------FIN---------*/
 
 
+/*-------------------------- images, illustration,... tous ce qui a une transparence I1C1S1A1 (Image 1 article 1 Semaine 1 Arc 1) -----------------------*/
+.illustrations{
+  opacity:0.3;
+  z-index:1;
+  position:relative;
+}
+
+#I1-C1-S1-A1{         /*taille de l'image = 300 x225 px*/
+  .illustrations;
+  top:0px;
+  left:20px;
+  width:50%;
   
+  }
+  
+#I2-C1-S1-A1{         /*taille de l'image = 100 x 75 px*/
+  .illustrations;
+  top:100px;
+  left:55px;
+  }
+
+#I3-C1-S1-A1{         /*taille de l'image = 100 x 75 px*/
+  .illustrations;
+  top:-70px;
+  left:55px;
+  } 
+/*-----FIN----- images, illustration,... tous ce qui a une transparence I1C1S1A1 (Image 1 article 1 Semaine 1 Arc 1) -----FIN-----*/
  
+  
+/*------------------------------------text des text A1C1S1A1  (Article 1 article(text) 1 Semaine 1 Arc 1) ----------------------------------------------*/
+.text{
+  font-family:'LatoRegular';
+  opacity:1.0;
+  font-size:1em;
+  z-index:2;
+  color:#000;
+  text-align:left;
+  position:relative;
+  top:0px;
+  left:0px
+  width:60%;
+}
+/*
+#T1-C1-S1-A1{
+  font-size:3.5em;
+  top:-710px;
+  left:0px;
+  width:100%;
+  /*background-color:#3FF;*/
+/*}*/
+  
+/*#T2-C1-S1-A1{
+  font-size:1em;
+  top:-235px;
+  left:50px;
+  width:80%;
+}
+
+#T3-C1-S1-A1{
+  font-size: 1em;
+  top:0px;
+  left:0px;
+  width:100%;
+}*/
+/*-----FIN------text des text A1C1S1A1  (Article 1 article(text) 1 Semaine 1 Arc 1) -----FIN-------*/
